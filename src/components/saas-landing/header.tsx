@@ -52,9 +52,11 @@ export function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <Button className="bg-blue-700 shadow-2xl hover:bg-blue-700 text-white px-6 py-2 rounded-lg btn-glow">
-            <Link href="/signup">Buy Template</Link>
-          </Button>
+          <Link href="/signup">
+            <Button className="bg-blue-700 shadow-2xl cursor-pointer hover:bg-blue-700 text-white px-6 py-2 rounded-lg btn-glow">
+              Buy Template
+            </Button>
+          </Link>
         </div>
 
         <div className="md:hidden">

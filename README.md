@@ -2,7 +2,10 @@
 
 Este proyecto es una implementación del template **SaaSwiftie** de Framer, adaptado a un frontend modular con **Next.js 15**, **TypeScript**, **Tailwind CSS**, **Axios**, **Framer Motion**, **TanStack Query**, y **shadcn/ui** para componentes UI. La estructura incluye una página de inicio con secciones interactivas como dashboard, testimonios, precios, preguntas frecuentes y más.
 
-Puedes ver la página maquetada aquí: [https://saaswiftie.framer.website/](https://saaswiftie.framer.website/)
+💡 **Nota inicial:** La página de autenticación se puede ver si haces clic en los botones **“Buy Template”** o **“See Solution”** en la página principal.
+
+La página maquetada en este proyecto está disponible en: [https://frontend-challenge-javier-rojas-tw8.vercel.app/](https://frontend-challenge-javier-rojas-tw8.vercel.app/)
+El template original en Framer: [https://saaswiftie.framer.website/](https://saaswiftie.framer.website/)
 
 ---
 
@@ -144,4 +147,5 @@ vercel --prod
 
 Este proyecto fue desarrollado como prueba técnica, utilizando el template **SaaSwiftie** de Framer. La implementación se enfocó en modularidad, reutilización de componentes, optimización de rendimiento y consistencia visual usando **shadcn/ui**.
 
-[Ver proyecto en Framer](https://saaswiftie.framer.website/)
+[Ver proyecto maquetado](https://frontend-challenge-javier-rojas-tw8.vercel.app/)
+[Template original en Framer](https://saaswiftie.framer.website/)
