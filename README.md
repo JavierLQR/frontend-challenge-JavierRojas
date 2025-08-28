@@ -1,6 +1,8 @@
 # Frontend Challenge – Javier Rojas
 
-Este proyecto es una implementación del template **SaaSwiftie** de Framer, adaptado a un frontend modular con **Next.js 15**, **TypeScript**, **Tailwind CSS**, **Axios**, **Framer Motion** y **TanStack Query**. La estructura incluye una página de inicio con secciones interactivas como dashboard, testimonios, precios, preguntas frecuentes y más.
+Este proyecto es una implementación del template **SaaSwiftie** de Framer, adaptado a un frontend modular con **Next.js 15**, **TypeScript**, **Tailwind CSS**, **Axios**, **Framer Motion**, **TanStack Query**, y **shadcn/ui** para componentes UI. La estructura incluye una página de inicio con secciones interactivas como dashboard, testimonios, precios, preguntas frecuentes y más.
+
+Puedes ver la página maquetada aquí: [https://saaswiftie.framer.website/](https://saaswiftie.framer.website/)
 
 ---
 
@@ -61,7 +63,7 @@ Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el 
 - `CTASection` – Call-to-action  
 - `FooterSection` – Footer con información y enlaces  
 
-Cada componente es modular y reutilizable con tipado **TypeScript**.
+Cada componente es modular y reutilizable con tipado **TypeScript** y estilos de **shadcn/ui** cuando aplica.
 
 ---
 
@@ -111,7 +113,8 @@ Este proyecto utiliza:
 - **Tailwind CSS** – Diseño utilitario  
 - **Framer Motion** – Animaciones interactivas  
 - **Axios** – Cliente HTTP  
-- **TanStack Query** – Gestión de datos y cache
+- **TanStack Query** – Gestión de datos y cache  
+- **shadcn/ui** – Componentes de interfaz reutilizables y consistentes
 
 ---
 
@@ -122,7 +125,8 @@ Este proyecto utiliza:
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)  
 - [Framer Motion Documentation](https://www.framer.com/motion/)  
 - [Axios Documentation](https://axios-http.com/docs/intro)  
-- [TanStack Query Documentation](https://tanstack.com/query/latest)
+- [TanStack Query Documentation](https://tanstack.com/query/latest)  
+- [shadcn/ui Documentation](https://ui.shadcn.com/docs)
 
 ---
 
@@ -138,6 +142,6 @@ vercel --prod
 
 ## Nota
 
-Este proyecto fue desarrollado como prueba técnica, utilizando el template **SaaSwiftie** de Framer. La implementación se enfocó en modularidad, reutilización de componentes y optimización de rendimiento.
+Este proyecto fue desarrollado como prueba técnica, utilizando el template **SaaSwiftie** de Framer. La implementación se enfocó en modularidad, reutilización de componentes, optimización de rendimiento y consistencia visual usando **shadcn/ui**.
 
 [Ver proyecto en Framer](https://saaswiftie.framer.website/)
