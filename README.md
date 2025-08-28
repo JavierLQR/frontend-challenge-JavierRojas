@@ -1,7 +1,7 @@
 # Frontend Challenge – Javier Rojas
 
-This is a **Next.js 15** project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).  
-It is a modular SaaS-style frontend built with **TypeScript**, **Tailwind CSS**, and **Next.js App Router**, including a structured dashboard, landing page, FAQ, pricing, testimonials, and authentication endpoints.
+This is a **Next.js 14** project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).  
+It is a modular SaaS-style frontend built with **TypeScript**, **Tailwind CSS**, **Axios**, and **TanStack Query**, including a structured dashboard, landing page, FAQ, pricing, testimonials, and authentication endpoints.
 
 ---
 
@@ -119,9 +119,11 @@ Clears the authentication cookie.
 This project uses:
 
 - **Next.js 14 App Router** – File-based routing and server actions  
-- **TypeScript** – Strong typing for safer code  
+- **TypeScript** – Strong typing for safer code and components  
 - **Tailwind CSS** – Utility-first styling  
 - **Framer Motion** – Animations for interactive UI  
+- **Axios** – For HTTP requests  
+- **TanStack Query** – For data fetching, caching, and synchronization  
 
 You can start editing `app/page.tsx` and the components in `components/` to customize the UI.
 
@@ -130,8 +132,11 @@ You can start editing `app/page.tsx` and the components in `components/` to cust
 ## Learn More
 
 - [Next.js Documentation](https://nextjs.org/docs)  
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)  
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)  
 - [Framer Motion Documentation](https://www.framer.com/motion/)  
+- [Axios Documentation](https://axios-http.com/docs/intro)  
+- [TanStack Query Documentation](https://tanstack.com/query/latest)
 
 ---
 
