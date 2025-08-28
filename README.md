@@ -1,7 +1,6 @@
 # Frontend Challenge – Javier Rojas
 
-This is a **Next.js 15** project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).  
-It is a modular SaaS-style frontend built with **TypeScript**, **Tailwind CSS**, **Axios**, and **TanStack Query**, including a structured dashboard, landing page, FAQ, pricing, testimonials, and authentication endpoints.
+Este proyecto es una implementación del template **SaaSwiftie** de Framer, adaptado a un frontend modular con **Next.js 15**, **TypeScript**, **Tailwind CSS**, **Axios**, **Framer Motion** y **TanStack Query**. La estructura incluye una página de inicio con secciones interactivas como dashboard, testimonios, precios, preguntas frecuentes y más.
 
 ---
 
@@ -19,7 +18,7 @@ It is a modular SaaS-style frontend built with **TypeScript**, **Tailwind CSS**,
 
 ## Getting Started
 
-Install dependencies and start the development server:
+Instala las dependencias y ejecuta el servidor de desarrollo:
 
 ```bash
 npm install
@@ -32,8 +31,7 @@ pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.  
-Edit pages inside the `app` directory and components inside `components` to see live updates.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el resultado. Edita páginas dentro de `app` y componentes dentro de `components/` para ver actualizaciones en vivo.
 
 ---
 
@@ -41,41 +39,37 @@ Edit pages inside the `app` directory and components inside `components` to see 
 
 ```
 /app
-  /page.tsx           # Main entry for the homepage
-/components           # Reusable UI components
-/modules              # Domain-specific modules (e.g., auth)
-  /auth/types          # TypeScript types for authentication
-/public               # Static assets
-/styles               # Tailwind CSS & global styles
+  /page.tsx           # Entrada principal de la página
+/components           # Componentes reutilizables
+/modules              # Módulos específicos (p.ej., auth)
+  /auth/types          # Tipos de TypeScript para autenticación
+/public               # Archivos estáticos
+/styles               # Estilos globales y Tailwind
 ```
 
 ---
 
 ## Components
 
-The homepage is composed of the following sections:
+- `SaasLandingSection` – Hero section del landing page  
+- `ProjectDashboardSection` – Dashboard de proyectos  
+- `PainPointsSection` – Puntos de dolor clave  
+- `ContentDashboard` – Contenido y analíticas detalladas  
+- `TestimonialsSection` – Testimonios de usuarios  
+- `FAQSection` – Preguntas frecuentes  
+- `PricingSection` – Planes de precios  
+- `CTASection` – Call-to-action  
+- `FooterSection` – Footer con información y enlaces  
 
-- `SaasLandingSection` – Hero section for the landing page  
-- `ProjectDashboardSection` – Dashboard overview of projects  
-- `PainPointsSection` – Key user pain points  
-- `ContentDashboard` – Detailed content and analytics  
-- `TestimonialsSection` – Customer testimonials  
-- `FAQSection` – Frequently Asked Questions  
-- `PricingSection` – Pricing plans  
-- `CTASection` – Call-to-action for users  
-- `FooterSection` – Footer with links and information  
-
-Each component is modular, easy to reuse, and follows **TypeScript** typing for safety.
+Cada componente es modular y reutilizable con tipado **TypeScript**.
 
 ---
 
 ## Authentication Endpoints
 
-This project includes simple **API routes** for authentication:
-
 ### POST `/api/auth/signup`
 
-Registers a new user:
+Registra un nuevo usuario:
 
 ```ts
 const body = { email: string, name: string }
@@ -84,48 +78,40 @@ Response:
 {
   success: true,
   data: { email, name },
-  message: 'User signed up successfully',
+  message: 'Usuario registrado con éxito',
   statusCode: 201,
   timestamp: string,
   service: 'AuthService'
 }
 ```
 
-Cookies are set with `httpOnly` and secure flags for authentication persistence.
-
----
-
 ### DELETE `/api/auth/logout`
 
-Logs out a user:
+Cierra sesión de un usuario:
 
 ```ts
 Response:
 {
   success: true,
-  message: 'User logged out successfully',
+  message: 'Usuario desconectado con éxito',
   statusCode: 200,
   timestamp: string,
   service: 'AuthService'
 }
 ```
 
-Clears the authentication cookie.
-
 ---
 
 ## Development
 
-This project uses:
+Este proyecto utiliza:
 
-- **Next.js 14 App Router** – File-based routing and server actions  
-- **TypeScript** – Strong typing for safer code and components  
-- **Tailwind CSS** – Utility-first styling  
-- **Framer Motion** – Animations for interactive UI  
-- **Axios** – For HTTP requests  
-- **TanStack Query** – For data fetching, caching, and synchronization  
-
-You can start editing `app/page.tsx` and the components in `components/` to customize the UI.
+- **Next.js 15 App Router** – Enrutamiento basado en archivos y server actions  
+- **TypeScript** – Tipado estático  
+- **Tailwind CSS** – Diseño utilitario  
+- **Framer Motion** – Animaciones interactivas  
+- **Axios** – Cliente HTTP  
+- **TanStack Query** – Gestión de datos y cache
 
 ---
 
@@ -142,10 +128,16 @@ You can start editing `app/page.tsx` and the components in `components/` to cust
 
 ## Deployment
 
-Deploy easily on **Vercel**:
+Deploy en **Vercel**:
 
 ```bash
 vercel --prod
 ```
 
-Check [Next.js Deployment Documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more options.
+---
+
+## Nota
+
+Este proyecto fue desarrollado como prueba técnica, utilizando el template **SaaSwiftie** de Framer. La implementación se enfocó en modularidad, reutilización de componentes y optimización de rendimiento.
+
+[Ver proyecto en Framer](https://saaswiftie.framer.website/)
