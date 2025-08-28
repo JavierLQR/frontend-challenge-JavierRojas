@@ -1,6 +1,6 @@
 # Frontend Challenge – Javier Rojas
 
-This is a **Next.js 14** project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).  
+This is a **Next.js 15** project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).  
 It is a modular SaaS-style frontend built with **TypeScript**, **Tailwind CSS**, **Axios**, and **TanStack Query**, including a structured dashboard, landing page, FAQ, pricing, testimonials, and authentication endpoints.
 
 ---
